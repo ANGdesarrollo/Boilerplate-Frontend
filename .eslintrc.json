@@ -169,7 +169,6 @@
       }
     ],
     "react/prop-types": "off"
-    // Disable prop-types check when using TypeScript
   }
 }
 
