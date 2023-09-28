@@ -9,5 +9,5 @@
 }
 
 body {
-  @apply min-h-screen border-box;
+  @apply min-h-screen box-border;
 }

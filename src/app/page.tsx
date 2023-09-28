@@ -1,7 +1,8 @@
 import React from 'react';
+import { RegisterTemplate } from '@/features/register/template/RegisterTemplate';
 
 const IndexPage = () => {
-  return (<div>Hello World</div>);
+  return (<RegisterTemplate/>);
 };
 
 export default IndexPage;
