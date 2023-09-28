@@ -11,7 +11,8 @@
     "lint": "next lint",
     "pre-commit": "lint-staged",
     "lint:fix": "eslint 'src/**/*.{js,ts,jsx,tsx,html,json}' --fix",
-    "ts:check": "tsc -p tsconfig.json --noEmit"
+    "ts:check": "tsc -p tsconfig.json --noEmit",
+    "prettier:fix":  "npx prettier --write \"src/**/*.tsx\" \"src/**/*.css\""
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
