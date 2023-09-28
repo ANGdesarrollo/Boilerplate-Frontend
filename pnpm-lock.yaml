@@ -69,6 +69,9 @@ devDependencies:
   lint-staged:
     specifier: ^14.0.1
     version: 14.0.1
+  prettier:
+    specifier: ^3.0.3
+    version: 3.0.3
   prettier-plugin-tailwindcss:
     specifier: ^0.5.4
     version: 0.5.4(prettier@3.0.3)
