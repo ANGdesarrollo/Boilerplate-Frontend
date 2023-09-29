@@ -1,39 +1,29 @@
-export const fieldsToValidate = [
-  {
-    name: 'firstName',
-    validations: [
-      {
-        type: 'required',
-        message: 'First name is required.'
-      },
-      {
-        type: 'minLength',
-        value: 3,
-        message: 'First name must be at least 3 characters long.'
-      }
-    ]
+export const validationUsername = {
+  required: {
+    value: true,
+    message: 'Name is required'
   },
-  {
-    name: 'lastName',
-    validations: [
-      {
-        type: 'required',
-        message: 'Last name is required.'
-      }
-    ]
+  minLength: {
+    value: 5,
+    message: 'Minimum of characters are 5'
   },
-  {
-    name: 'password',
-    validations: [
-      {
-        type: 'required',
-        message: 'Password is required.'
-      },
-      {
-        type: 'minLength',
-        value: 8,
-        message: 'Password must be at least 8 characters long.'
-      }
-    ]
+  maxLength: {
+    value: 20,
+    message: 'Maximum characters are 50'
   }
-];
+};
+
+export const validationPassword = {
+  required: {
+    value: true,
+    message: 'Password is required'
+  },
+  minLength: {
+    value: 5,
+    message: 'Minimum of characters are 8'
+  },
+  maxLength: {
+    value: 20,
+    message: 'Maximum characters are 100'
+  }
+};
