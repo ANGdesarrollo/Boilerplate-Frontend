@@ -12,7 +12,7 @@
     "pre-commit": "lint-staged",
     "lint:fix": "eslint 'src/**/*.{js,ts,jsx,tsx,html,json}' --fix",
     "ts:check": "tsc -p tsconfig.json --noEmit",
-    "prettier:fix":  "npx prettier --write \"src/**/*.tsx\" \"src/**/*.css\""
+    "prettier:fix": "npx prettier --write \"src/**/*.tsx\" \"src/**/*.css\""
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
@@ -32,8 +32,7 @@
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/experimental-utils": "^5.62.0",
     "@typescript-eslint/parser": "^6.4.1",
-    "autoprefixer": "latest",
-    "eslint": "latest",
+    "eslint": "^8.50.0",
     "eslint-config-next": "latest",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-tailwindcss": "^3.13.0",
@@ -42,7 +41,6 @@
     "postcss": "latest",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
-    "tailwindcss": "latest",
-    "typescript": "latest"
+    "tailwindcss": "^3.3.3"
   }
 }

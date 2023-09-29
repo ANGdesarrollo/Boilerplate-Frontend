@@ -1,5 +1,5 @@
-import React from 'react';
-import { RegisterTemplate } from '@/features/register/template/RegisterTemplate';
+import { RegisterTemplate } from "@/features/register/template/RegisterTemplate";
+import React from "react";
 
 const IndexPage = () => {
   return <RegisterTemplate />;

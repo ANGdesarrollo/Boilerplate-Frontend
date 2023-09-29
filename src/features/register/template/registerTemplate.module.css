@@ -1,0 +1,25 @@
+.containerGeneral {
+  @apply relative flex items-center overflow-hidden bg-primary bg-contain bg-top;
+}
+.background {
+  @apply absolute top-0 z-0 max-h-[100%] w-screen;
+}
+.containerForm {
+  @apply w-full;
+}
+.container label {
+  @apply text-center;
+}
+.container input {
+  @apply mt-2  h-[56px] w-full rounded-xl  border-[1px] border-solid border-white bg-white bg-opacity-[55%] p-2;
+}
+.container span {
+  @apply flex justify-center text-xs text-white;
+}
+.form {
+  @apply m-auto mb-6 mt-[25%] flex w-[80%] flex-col;
+}
+
+.btn {
+  @apply m-auto mt-8 w-[50%];
+}
