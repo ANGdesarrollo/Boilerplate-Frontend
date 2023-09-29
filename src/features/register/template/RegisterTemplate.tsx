@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 import style from './registerTemplate.module.css';
 
 import { useForm } from 'react-hook-form';
@@ -31,9 +31,7 @@ export const RegisterTemplate = () => {
   const onSubmit = handleSubmit(() => {
     reset();
   });
-  useEffect(() => {
-    console.log('me llamaron');
-  });
+
   return (
     <div className={style.containerGeneral}>
       <form action="" className={style.container} onSubmit={onSubmit}>
