@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
   FieldValues,
   RegisterOptions,
   UseFormRegister,
-  FieldErrors,
-} from "react-hook-form";
+  FieldErrors
+} from 'react-hook-form';
 
 interface IProps {
-  type: "text" | "number" | "email" | "password";
+  type: 'text' | 'number' | 'email' | 'password';
   name: string;
   label?: string;
   register: UseFormRegister<FieldValues>;
@@ -15,6 +15,7 @@ interface IProps {
   errors: FieldErrors<FieldValues>;
   id: string;
   className?: string;
+  placeholder?: string;
 }
 
 export const InputForm: React.FC<IProps> = ({
@@ -26,12 +27,13 @@ export const InputForm: React.FC<IProps> = ({
   id,
   className,
   label,
+    placeholder
 }) => {
   const error = errors[name];
   return (
     <div className={className}>
       <label htmlFor={id}>{label}</label>
-      <input {...register(name, validations)} type={type} name={name} id={id} />
+      <input {...register(name, validations)} type={type} name={name} id={id} placeholder={placeholder} />
       {error && <p>{error.message as string}</p>}
     </div>
   );
